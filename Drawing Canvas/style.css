@@ -1,0 +1,79 @@
+
+
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+
+}
+
+
+canvas {
+    
+    cursor: pointer;
+    border-style: none;
+}
+
+
+.tools{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.tools .color-field{
+height: 50px;
+width: 50px;
+min-height: 10px;
+min-width: 10px;
+
+
+display: inline-block;
+cursor: pointer;
+box-sizing: border-box;
+border-radius: 50%;
+
+align-self: center;
+margin: 0 10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.tools .button {
+    align-self: center;
+    width: 100px;
+    height: 40px;
+   
+    cursor: pointer;
+    color: white;
+    background: #222;
+    font-weight: bold;
+    margin: 0 10px;
+
+}
+
+.color-picker {
+    align-self: center;
+    margin: 0 0px;
+    height: 50px;
+    border: none;
+
+}
+.pen-range {
+    align-self: center;
+    margin: 0 10px;
+    border-style: none;
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <title>Canvas</title>
+</head>
+
+<body>
+    <div class="field"> 
+        <canvas id="canvas"></canvas>
+        <div class="tools">
+            <button type="button" Onclick="undo_last()" class ="button">Undo</button>
+            <button type="button" Onclick="clear_canvas()" class ="button">Clear</button>
+
+
+          
+           <div onClick="change_color(this)"  class="color-field" style="background: rgb(233, 65, 65);"></div> 
+           <div onClick="change_color(this)" class="color-field" style="background: rgb(224, 156, 30);"></div>
+           <div onClick="change_color(this)" class="color-field" style="background: rgb(206, 206, 72);"></div>
+           <div onClick="change_color(this)" class="color-field" style="background: rgb(31, 177, 80);"></div> 
+           <div onClick="change_color(this)" class="color-field" style="background: rgb(39, 103, 177);"></div> 
+           <div onClick="change_color(this)" class="color-field" style="background: rgb(170, 18, 150);"></div> 
+           <div onClick="change_color(this)" class="color-field" style="background: black;"></div> 
+           <div onClick="change_color(this)" class="color-field" style="background: white;"></div> 
+          
+           <input Oninput="draw_color = this.value" type="color" class="color-picker">
+           <input type="range" min="1" max="100" class="pen-range" oninput="draw_width =this.value">
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
